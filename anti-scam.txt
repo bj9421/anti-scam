@@ -547,3 +547,5 @@ techritual.com##div[class="td_block_inner td-mc1-wrap"]
 ||avividone.likr.tw^$third-party
 
 ||https://googleads.g.doubleclick.net^$important
+
+||dable.io^
