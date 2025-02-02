@@ -545,3 +545,5 @@ techritual.com##div[class="td_block_inner td-mc1-wrap"]
 ||track.beanfun.com^$third-party
 ||avivid.likr.tw^$third-party
 ||avividone.likr.tw^$third-party
+
+||https://googleads.g.doubleclick.net^$important
