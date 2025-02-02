@@ -1,5 +1,547 @@
-m.qdrlxz.com
-jmvhxz.shop
-yhgnmd.shop
-hvmope.vip
-xiahu.site
+[Adblock Plus]
+! Title: LowTechFilter Filter
+! Version: 2025.0201.1
+! Expires: 1 hour
+! Homepage: https://t.me/AdBlock_TW
+! ----------------------------------------------------------------------
+! PTT 驗證
+! www.ptt.cc#%#document.onreadystatechange=()=>{if(location.pathname.includes('/ask/over18')){document.querySelectorAll('.over18-button-container>button[name="yes"]').forEach(x=>x.click())}};
+! ----------------------------------------------------------------------
+! cookie 注入
+! 卡卡洛普
+gamme.com.tw#%#//scriptlet('set-cookie-reload', 'r18', '1')
+! momo 購物
+momoshop.com.tw#%#//scriptlet('set-cookie-reload', 'pwaLifeCircle', '1')
+# ! udn 蓋板
+# udn.com##%#//scriptlet('set-local-storage-item', 'bd2021-read-news', '1')
+! ----------------------------------------------------------------------
+! 白名單
+@@||ebb.io^$important,document,~extension
+@@||postserv.post.gov.tw/pstmail/main_mail.html$important,document,~extension
+@@||pxmart.com.tw^$important,document,~extension
+@@||fonts.gstatic.com^
+
+! 微雲
+share.weiyun.com#@#.page-ad
+! ----------------------------------------------------------------------
+ani.gamer.com.tw##a.vast-blocker
+share.dmhy.org##div[id='1280_ad']>a
+
+! 噗浪
+||plurk.com/go^$empty
+||go.plurk.com^$empty
+||l.plurk.com^$empty
+plurk.com##div#resp_banner_ads
+plurk.com##section#rightPanel
+plurk.com##div[data-respcount="廣告"]
+
+r3sub.com##section.container>div:first-child>div:first-child>a:first-child
+r3sub.com##div.ad_movie--preview
+||scupio.com^$third-party
+||sitemaji.com^$third-party
+
+! cnyes
+m.cnyes.com##div._12E
+m.cnyes.com##div._3Yy
+
+! eprice
+m.eprice.com.tw##div.ad-320x480-popup-g
+m.eprice.com.tw##div.parallax-ads-container
+m.eprice.com.tw##div.ad-300x250-g
+m.eprice.com.tw##div.ad-320x100-g
+m.gamer.com.tw##div.goAPP
+
+! pixnet
+pixnet.net##div.pixnet-happix-pilot__launcher-bubble
+pixnet.net##div.pixnet-happix-pilot__launcher-bar__button-container
+pixnet.net##div.pixnet-happix-pilot__launcher-bar__gift-notification
+pixnet.net##div.pixnet-happix-pilot__launcher-bar__happix-notification
+pixnet.net##div.header-fixed-area
+pixnet.net##div.fbbox
+pixnet.net##div.header_web_to_app__container
+||front.pixfs.net/module/idlePop/js/*
+
+! 4Gamer
+www.4gamers.com.tw##div[class^="mobile-bottom-ads"]
+www.4gamers.com.tw##div[class="vue-portal-target"]
+www.4gamers.com.tw##div[class^="fab-ads"]
+||www.4gamers.com.tw/site/api/aols/media?slot*
+
+! ----------------------------------------------------------------------
+! 新聞或媒體
+! udn 新聞
+udn.com##dt.more_ad
+udn.com##dt.only_mobile
+udn.com##.udn-idle
+udn.com##div[class^="udn-ads"]
+udn.com##.udn-overlay
+udn.com#%#//scriptlet('remove-class', 'idle-open')
+udn.com#%#//scriptlet('set-cookie-reload', 'SeenActivityCloseNotice', 'true')
+
+! udn 健康
+health.udn.com###overlay_show_box
+! 自由時報
+ltn.com.tw##div[data-desc="內廣"]
+ltn.com.tw##div[class="idle_lightbox_target"]
+news.ltn.com.tw#%#//scriptlet('set-cookie', 't_gid', '1')
+ltn.com.tw#%#//scriptlet('set-cookie-reload', 'softPush', '1')
+news.ltn.com.tw#%#//scriptlet('set-local-storage-item', 'taboola global:local-storage-keys', 'emptyObj')
+news.ltn.com.tw#%#//scriptlet('set-local-storage-item', '_ss_pp_id', '')
+news.ltn.com.tw#%#//scriptlet('set-local-storage-item', 'cto_bundle', '')
+news.ltn.com.tw#%#//scriptlet('set-local-storage-item', 'ltn-ltnwebsite:session-data', '')
+news.ltn.com.tw#%#//scriptlet('set-local-storage-item', 'tbl_rtus_id', '')
+news.ltn.com.tw#%#//scriptlet('set-local-storage-item', '_popIn_box_position_style_key_', 'emptyObj')
+news.ltn.com.tw#%#//scriptlet('set-local-storage-item', 'taboola global:user-id', '')
+news.ltn.com.tw#%#//scriptlet('set-local-storage-item', 'L_PUID', 'emptyObj')
+
+! 三立新聞
+www.setn.com##div[id^="gad_setn_article"]:upward(1):remove()
+www.setn.com##div[id^="gad_setn_innity"]:upward(1):remove()
+www.setn.com##div[id^="gad_HeadNews_setn_article"]:upward(1):remove()
+www.setn.com##div[id^="div-gpt-ad"]:remove()
+www.setn.com###bar_ad
+www.setn.com##.ad
+www.setn.com##.readmoreCont:upward(1)
+
+! 直播
+www.setn.com##div[class^="InstreamDom"]:remove()
+www.setn.com###liveFrame_1:upward(1):remove()
+
+www.setn.com##.livevodBox:remove()
+www.setn.com##iframe[id="LiveVod"]:upward(1):remove()
+! 隱私權政策
+www.setn.com##div[class^="privacy-area"]
+www.setn.com##div[class^="rightFloat"]
+
+www.setn.com#%#//scriptlet('set-cookie-reload', 'linefriendModal', 'true')
+||www.setddg.com/AdExternal/*
+||www.setn.com/js/LogTracer.js*^
+
+! ettoday
+ettoday.net##div[class="pcbt_kw active"]
+ettoday.net$$div[class="top-sky"]
+ettoday.net$$div[class="top-sky-index"]
+ettoday.net$$div[class="ad250x50"]
+ettoday.net$$div[class="ad120x50-1"]
+ettoday.net$$div[class="ad120x50-2"]
+
+ettoday.net##.adJS01
+ettoday.net##.adJS03
+
+! ettoday 文字廣告
+ettoday.net$$div[class="text_ad_top"]
+ettoday.net$$div[class="ad_txt_1"]
+ettoday.net$$div[class="ad_txt_2"]
+
+ettoday.net#%#//scriptlet('set-cookie-reload', 'webpush', '1')
+ettoday.net##div[class="idleAd"]
+ettoday.net##a[href^="https://fugo.ehsn.com.tw/"]
+||ettoday.net^$cookie=/et_.*/
+||ettoday.net^$cookie=/dcs_.*/
+ettoday.net#%#//scriptlet('remove-attr', 'autoplay', 'video')
+ettoday.net#%#//scriptlet('remove-attr', 'preload', 'video')
+ettoday.net##p[class^="ad_txt"]
+ettoday.net##div[id="abp3"]
+ettoday.net##div[class^="ad_"]
+||www.ettoday.net/source/tools/videoLiveShoppingCart/index.php7
+
+! 數位時代
+! bnext.com.tw##div[class="IdleBox"]
+bnext.com.tw###ad_top:remove()
+bnext.com.tw###ad_middle
+bnext.com.tw##.adbox
+bnext.com.tw##.support-pumpkin
+! 包含自動影片廣告
+bnext.com.tw###my-idle-wrapper:remove()
+bnext.com.tw##div[class^="relative side-pos"]:remove()
+bnext.com.tw#%#//scriptlet('prevent-setTimeout')
+
+! 商周
+www.businessweekly.com.tw##.ins-top-cover
+www.businessweekly.com.tw##div.Google-special:has(ins)
+www.businessweekly.com.tw##div.subscriptionEmailEDMv1
+! 商周贊助廣告
+www.businessweekly.com.tw##article:has(.Tag-sponsor)
+www.businessweekly.com.tw##article:has(ins)
+www.businessweekly.com.tw##div.Single-hot-news-content:has(ins)
+! 商周隱私權
+www.businessweekly.com.tw###gdrp-el
+! 商周右側廣告
+www.businessweekly.com.tw###floatAD
+
+businessweekly.com.tw#?#div[class^="wlmo-AD"]
+businessweekly.com.tw#?#.event-side-top-ad
+! solidot
+solidot.org##div#headads
+solidot.org##div.adv
+solidot.org##div.combined_log
+! 天下雜誌
+cw.com.tw##div.banner.text-center
+cw.com.tw##div[class$="idleBox"]
+cw.com.tw##div[class$="idlebox__opened"]
+cw.com.tw##div[gtm-name="Paywall_bar_sub"]
+! TVBS
+news.tvbs.com.tw##[class="advertising_lightbox"]
+news.tvbs.com.tw##[class="idle_lightbox2"]
+tvbs.com.tw##div[class="time_limit"]
+news.tvbs.com.tw#%#//scriptlet('set-cookie-reload', 'no_web_push', 'true')
+! CNA 新聞
+www.cna.com.tw##[class="overlayidle showidle"]
+www.cna.com.tw##.fixedBottom
+www.cna.com.tw##.logoRightAD
+www.cna.com.tw##.adslot
+www.cna.com.tw##.jsADslot
+www.cna.com.tw##.js_top_ad
+www.cna.com.tw##.adslot_infinite
+www.cna.com.tw##.top_ad
+! CNA 全球視野
+www.cna.com.tw##.MarketPC
+www.cna.com.tw##.MarketMB
+www.cna.com.tw##.MarketSquare
+! CNA 訂閱
+www.cna.com.tw##.SubscriptionInner
+www.cna.com.tw##.mySubscriptionInner
+! 風傳媒
+storm.mg#%#//scriptlet('abort-current-inline-script', 'show_idle_alert')
+storm.mg#%#//scriptlet('abort-current-inline-script', 'show_new7_popup')
+storm.mg#%#//scriptlet('abort-current-inline-script', 'show_popup_ad')
+storm.mg##div[class="popup_wrapper"]
+storm.mg##div[data-addom="storm_ad_wrapper"]
+storm.mg##.notify_wordings
+! techbang
+||techbang.com/pages/idle_popup
+techbang.com###idle-container
+techbang.com#%#//scriptlet('prevent-setInterval')
+www.techbang.com##div[class^="pcadv_"]
+www.techbang.com##div[class^="phone-ads"]
+
+! PCHOME 新聞
+news.pchome.com.tw##.adfloat
+news.pchome.com.tw##div[class^="adnewlist"]
+! NewTalk
+newtalk.tw##div[class="ad_content_mask"]
+newtalk.tw##a[class="trackGA"]
+newtalk.tw##div[class="gliaplayer-container"]
+newtalk.tw##div[class="pc-shareBar"]
+newtalk.tw##div[class="ats_insert_ads"]
+||newtalk.tw/js/news/shareBar.*^
+||newtalk.tw/js/ifvisible.js*^
+
+! 中時
+||static.chinatimes.com/scripts/2020/page-idle-prompt2020.min.js
+||static.chinatimes.com/scripts/2020/subscribe-news-letter-prompt2020.min.js
+||static.chinatimes.com/scripts/likr.js
+www.chinatimes.com##div[class^="ad"]
+www.chinatimes.com##li[class$="yap-loaded"]
+||www.chinatimes.com^stealth
+
+! shoppingdesign
+shoppingdesign.com.tw#$#.IdleBox { display: none !important; }
+niusnews.com##div[class="fixed-footer-ad"]
+
+! 蘋果新聞
+# appledaily.com.tw##.TW-MOBILE-AD-WRAP
+# appledaily.com.tw##.tw-mobile-social_container
+tw.nextapple.com#%#//scriptlet('remove-attr', 'preload', 'video')
+tw.nextapple.com#%#//scriptlet('remove-attr', 'autoplay', 'video')
+tw.nextapple.com#%#//scriptlet('set-cookie-reload', 'app_popup', '1')
+tw.nextapple.com##div[id="appPromoteBtn"]
+tw.nextapple.com##div[class="scrollToAD"]
+tw.nextapple.com##div[class="na-ad-m"]
+tw.nextapple.com##div[class="na-ad-pc"]
+tw.nextapple.com##div[id="lrec01"]
+
+! Yahoo 新聞
+tw.news.yahoo.com##div[data-content="廣告"]:remove()
+tw.news.yahoo.com##li[id^="gemini-item"]
+tw.news.yahoo.com#%#//scriptlet('abort-current-inline-script', 'initCode')
+tw.news.yahoo.com#%#//scriptlet('set-local-storage-item', 'download-wall', 'undefined')
+tw.news.yahoo.com#%#//scriptlet('set-local-storage-item', 'appPromoBanner', 'undefined')
+
+! 鏡週刊
+! www.mirrormedia.mg##a[id="aw0"]
+www.mirrormedia.mg##div[class^="gpt-placeholder__Container"]
+www.mirrormedia.mg##div[class^="gpt-ad__Wrapper"]:remove()
+www.mirrormedia.mg##div[class="avivid_arrow_wrapper"]:upward(1):remove()
+||www.mirrormedia.mg^$cookie=/AviviD.+/
+
+! 蘋果仁
+applealmond.com##.after-header-widget-area
+applealmond.com##div[id^="div-gpt-ad-"]
+applealmond.com##ins[class="adsbygoogle"]
+applealmond.com###_cm-css-reset:remove()
+applealmond.com##.Zi_ad_a_SB:upward(1)
+
+! 自由時報
+ltn.com.tw##div[id^="ad"]
+ltn.com.tw##.before_ir
+ltn.com.tw##.suggest
+news.ltn.com.tw##ul>li>a>span:contains(PR):upward(2):remove()
+
+! ithome
+ithome.com.tw##div[class="ad-banner-text"]:upward(3)
+ithome.com.tw##div[class="ad-text-in-middle"]:upward()
+||itadapi.ithome.com.tw/ads/serve*^
+||ithome.com.tw/modules/statistics/*^
+
+! gamebase.com.tw
+news.gamebase.com.tw##div[class="overlay"]
+news.gamebase.com.tw##.PCAD
+news.gamebase.com.tw##div[class="rightMiddleAD"]
+! 手機王
+sogi.com.tw##div[id="ad"]
+! fri.fr
+rfi.fr##div[class="m-interstitial__ad"]
+! ----------------------------------------------------------------------
+
+! Line
+! 白名單
+@@||obs.line-scdn.net/r
+@@||obs-tw.line-apps.com/talk
+@@||stickershop.line-scdn.net
+! UA 偽裝
+||a.line.me/er/la*/v1/$image,empty
+||w.line.me/la*/api/v*/ads^$empty
+! 廣告媒體
+||d.line-scdn.net/lcp-prod-photo/$image,empty
+||obs.line-scdn.net/0h*/w750$empty
+||obs.line-scdn.net/0h*/o1280x720$empty
+||obs.line-scdn.net/0h*/*p.mp4$empty
+! 廣告資料
+||sch.line.me/api/v*/ads^$empty
+||buy.line.me/api/graphql?variables$empty
+! Line 新聞
+||crs-event.line.me^$empty
+||api.today.line.me/webapi/TW/recommendation/articles/articleend^$empty
+
+! 漫畫人
+||mangaapi.manhuaren.net/*/manga/getMangaPromotionActivity^$empty
+||mangaapi.manhuaren.net/*/public/getShelfActivity^$empty
+||mangaapi.manhuaren.net/*/ad^$empty
+
+! 咖啡廣告
+coffeehunter.tw##div[class^="fancybox-wrap"]
+
+! 巴哈姆特勇者福利社
+@@||fuli.gamer.com.tw^$document,~extension
+
+! Shopback 導購
+@@||tracking.shopback.com/client/v1/events^$important,domain=shopback.com
+
+! Dcard
+||bilanx.dcard.tw/*/configs
+||bilanx.dcard.tw/*/events
+dcard.tw##div[class^="atm"]:has(> div[id^="div-gpt-ad"])
+dcard.tw#?#button[-ext-contains="/app 內打開/i"]
+dcard.tw##div[class]:has(> button[class]:has-text(/用 App 查看完整內容/))
+
+! PTT 相關
+||pttbrain.herokuapp.com/api/ptt/metric/user-geo-distributions^$document
+
+! 飛比價格
+feebee.com.tw###event_flybee_idle
+feebee.com.tw#%#//scriptlet('set-cookie-reload', 'flybee_float', 'false')
+
+! Thenewslens 關鍵評論網
+thenewslens.com##div[class^="ad-"]
+! 手機蓋板
+thenewslens.com##div[class^="AD2M"]
+! 內廣
+thenewslens.com##div[data-sponsor="1"]
+
+! EBC 東森新聞
+! ebc.net.tw##div:has(div[class="dfp_ad"])
+ebc.net.tw##div[id^="div-gpt-ad"]
+ebc.net.tw##div[id^="div-onead"]
+ebc.net.tw##div[class^="ad_"]
+
+ebc.net.tw##div>a>span:contains(廣告):upward(2):remove()
+ebc.net.tw##p>strong:upward(1):remove()
+ebc.net.tw##div[class="inline_text has_marker"]:remove()
+ebc.net.tw##div[class="bottom_fixbox"]:remove()
+
+! EBC 東森新聞 (手機)
+ebc.net.tw##div[id="mobile-cover"]
+ebc.net.tw##div[class="mobileonly-300ad"]
+ebc.net.tw##div[class="mobile-footer-ad"]
+ebc.net.tw##div[class="mobile-footer-ad-margin"]
+
+! No lives
+ebc.net.tw$$div[id="live-24hrs"]
+ebc.net.tw$$div[id="live-else"]
+
+! 愛料理
+icook.tw##div[class="recipe-ad-placeholder"]
+
+! momo 購物
+momoshop.com.tw##div[class^="downloadApp shown"]
+
+! popdaily
+popdaily.com.tw##div[class^="StyledStaticContent"]
+popdaily.com.tw##div[class^="Container-sc"]
+
+! 早安健康
+! 蓋板
+edh.tw##iframe#omnisegment-iframe
+edh.tw#%#//scriptlet('remove-attr', 'data-autoplay', 'div[class^="fb-video"]')
+
+! 每日健康
+healthylives.tw#%#//scriptlet('remove-attr', 'data-autoplay', 'div[class^="fb-video"]')
+
+! 遠見雜誌
+gvm.com.tw##div[class="footer-ad"]
+gvm.com.tw##div[class="m-footer-ad"]
+
+! eprice
+eprice.com.tw#$#.news-slider { width: 100%!important; height: 100%!important; }
+
+! 財訊
+wealth.com.tw##.top_ads_box
+wealth.com.tw###idle_modal
+
+! 經理人
+managertoday.com.tw##.mtaa.effect
+managertoday.com.tw##.social_item
+||www.managertoday.com.tw/salmon.png^
+||sn.bnextmedia.com.tw/js/tc.js^
+||*.bnextmedia.com.tw/recommendation/events/*^
+
+! liveabc
+@@||amazonaws.com/storage.liveabc.com/ads/*
+
+! medium
+codeburst.io,medium.com##[class][style="bottom: 0px;"]
+@@||medium.com^$stealth
+||medium.com/_/stat?event=pixel.load
+
+! Money 錢
+moneynet.com.tw#?#button[-ext-contains="開啟APP閱讀全文"]
+moneynet.com.tw###mobile-ad-bottom
+moneynet.com.tw##.forArticleTagSwitch p:last-of-type
+
+! cio
+cio.com.tw##div[class^="dialog-widget"]
+
+! 亞洲週刊
+yzzk.com##.content div.promo
+
+! 蝦皮
+||c-api-bit.shopeemobile.com/*/tr^
+
+! 知乎
+zhihu.com##div[class="Modal-wrapper undefined Modal-enter-done"]
+zhihu.com#$#html { overflow: scroll !important; }
+zhihu.com##div[class^=css-]:empty
+
+! 詐騙
+||brainstudy.info^
+
+soundofhope.org##div[id="itb_ads_catfish"]
+abmedia.io#%#//scriptlet('set-local-storage-item', 'isAdShowed', 'true')
+
+walkerland.com.tw##div[id="adGeek-top"]
+||walkerland.com.tw/js/idle_rwd.js^
+blockcast.it##span[id="aaspan"]
+mobile01.com##div[id="idle_content"]
+||www.mobile01.com/ajax/*/idlebox.php^
+! 封鎖錯誤
+! ||attach2.mobile01.com/js/jquery-fancybox/jquery-fancybox-min.js^
+times.hinet.net#%#//scriptlet('prevent-setTimeout', 'idleOpen')
+times.hinet.net##div[id="popSetting"]
+times.hinet.net##div[class^="ADbn"]
+times.hinet.net##div[id="kayakWidgetright"]
+times.hinet.net##div[id="kayakWidgetnews"]
+||times.hinet.net/resources/css/idle.css*
+||player.svc.litv.tv/v3/ppnio.js^$domain=hinet.net
+||adsv.svc.litv.tv^
+||player.svc.litv.tv/v3/ppnif.html^$domain=hinet.net
+||vatrack.hinet.net^
+edh.tw$@$script[tag-content="showidletime"]
+edh.tw##iframe[id="_popIn_log"]
+edh.tw##span[id="fix-corner"]
+edh.tw##div[id="close-corner"]
+edh.tw##a[class="activity-wall"]
+edh.tw##div[class="adinarticle_div"]
+edh.tw$@$script[tag-content="timerIncrement"]
+edh.tw#%#//scriptlet('abort-current-inline-script', 'timerIncrement')
+||edh.tw/resources/ad/*^
+kikinote.net#%#//scriptlet('set-cookie-reload', 'isShowSociety', '1')
+m.xsw.tw#$#div.content{ position: unset!important; }
+vocus.cc##div[class$="guestSignUpCta"]
+vocus.cc#%#//scriptlet('set-session-storage-item', 'haveReadArticleId', '')
+udn.com#$#aside.wrapper-aside{ top: unset!important; }
+udn.com##div[class="article-content__ads--bd"]
+money.udn.com##ul[class="article-aside__ad-list"]
+money.udn.com#$#aside.article-aside{ margin-top: unset!important; }
+money.udn.com#%#//scriptlet('set-local-storage-item', '_ss_pp_id', '')
+money.udn.com#%#//scriptlet('prevent-addEventListener', 'click')
+money.udn.com##div[id="show_box"]
+money.udn.com##div[id="bottomAd"]
+||cimg.cnyes.cool/prod/adContent/*
+news.cnyes.com##img[alt$="ad"]
+news.cnyes.com##div[class="_1ePH"]
+news.cnyes.com##div[class="ppn-content_wrapper"]
+news.cnyes.com##div[class="_MXx3"]
+
+www.kocpc.com.tw#%#//scriptlet('set-local-storage-item', '_ss_pp_id', '')
+||technews.tw/wp-admin/admin-ajax.php*
+ctwant.com##div[class="m-adpopup"]
+
+! nownews
+nownews.com##.adBlk
+nownews.com##.ad-blk1
+
+! DayBuy
+daybuy.tw##div[id="top_ad"]
+daybuy.tw##div[class]:has([class="adblock_subtitle"])
+
+worldjournal.com##div[class="article-content__ads--bd"]
+worldjournal.com##div[id="idle"]
+marieclaire.com.tw##div[class="adInnerMpu"]
+marieclaire.com.tw##div[class="adUnderlay"]
+news.agentm.tw##div[id="agmn_a_header_PC"]
+news.agentm.tw##div[class="gpt-ad-slot"]
+new-reporter.com##div[class="modalJS_object"]
+
+||www.mobile01.com/ajax/public/ad_imp.php^
+||attach2.mobile01.com/js/public/fancybox.js^
+mobile01.com#%#//scriptlet('remove-class', 'ad_popUp')
+mobile01.com##div[class=^="fancybox-container"]
+
+||udn.com^$cookie=/_ga.+/
+||udn.com^$cookie=trc_cookie_storage
+dq.yam.com##div[class$="-popup"]
+dq.yam.com##div[class$="-topBar"]
+||stats.yam.com/y/collect^
+hsnews.com.tw##section[id="sp-page-title"]
+
+! roo.cash
+roo.cash##div#google-one-tap-box-mobile
+
+! techritual.com
+techritual.com##div[id="onesignal-slidedown-container"]
+techritual.com##.wpb_wrapper.td_block_wrap:remove()
+! techritual.com##div[class^="td-g-rec td-g-rec-id-custom_ad_1"]
+techritual.com##div[class^="td-loader-gif tdb-loader-autoload"]:remove()
+||techritual.com/*?tdb_action=tdb_ajax^
+||techritual.com/wp-json/td-cloud-library/ajax_autoload^
+techritual.com##iframe
+techritual.com##div[class="td_block_inner td-mc1-wrap"]
+! ###tdi_119 > .td-cpt-post
+! 第三方追蹤、廣告平台
+||adbert.com.tw^$third-party
+||adbottw.net^$third-party
+||branch.io^$third-party
+||dable.io^$third-party
+||guoshipartners.com^$third-party
+||instag.ai^$third-party
+||onead.com.tw^$third-party
+||onevision.com.tw^$third-party
+||popin.cc^$third-party
+||static.cloudflareinsights.com^
+||static.cloudflareinsights.com/beacon.min.js
+||taboola.com^$third-party
+||tagtoo.co^$third-party
+||track.beanfun.com^$third-party
+||avivid.likr.tw^$third-party
+||avividone.likr.tw^$third-party
